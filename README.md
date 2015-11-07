@@ -13,12 +13,9 @@
 **两个商业性网站的开发,三台阿里云服务器的运营与维护**
 ## 求职
 希望毕业之时找一家靠谱的公司,做感兴趣的项目,奉献我的一腔热血;
-如果对我感兴趣，可点击查看我的博客[http://www.siguoya.name/][1];
+如果对我感兴趣，可点击查看我的博客[http://www.siguoya.name/];
 联系邮箱:924714558@qq.com
-![思过崖][image-1]
+
+![image](https://github.com/zy108830/learnLess/blob/master/src/siguoya.jpg)
 
 2015.11.07 思过崖
-
-[1]:	#
-
-[image-1]:	%20!%5Bimage%5D(https://github.com/zy108830/learnLess/blob/master/src/siguoya.jpg)
