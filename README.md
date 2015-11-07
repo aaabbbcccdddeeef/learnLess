@@ -1,6 +1,7 @@
 ## 学习Less的原因:
 - 对一切未知的事情都比较感兴趣
 - Less让前端编程更敏捷，代码更美
+
 ---- 
 ## 个人
 故乡河南信阳，目前是广州大学城广州大学的一名大四学生;
@@ -20,4 +21,4 @@
 
 [1]:	#
 
-[image-1]:	%20!%5Bimage%5D(https://github.com/zy108830/learnLess/raw/master/src/siguoya.jpg)
+[image-1]:	%20!%5Bimage%5D(https://github.com/zy108830/learnLess/blob/master/src/siguoya.jpg)
