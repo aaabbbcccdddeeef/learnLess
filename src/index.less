@@ -1,0 +1,160 @@
+@charset "utf-8";
+/*这种注释形式编译之后还会显示*/
+//这种注释形式编译之后不会显示
+
+body{
+	padding: 0px;
+	margin:0px;
+	background-color: grey;
+}
+
+//1.@变量名:变量值
+@width:800px;
+@height:100px;
+
+#main{
+	width: @width;
+	height: @height;
+}
+
+
+//2.1代码块重用
+.common{
+	float: left;
+	border-top: 5px solid green;
+}
+
+#main #div1{
+	width: 50px;
+	height: 50px;
+	background: red;
+	.common;
+}
+
+//2.2代码块重用－可带参数
+.common-args(@weight){
+	float: left;
+	border-top: @weight solid green;
+}
+
+#main #div2{
+	width: 50px;
+	height: 50px;
+	background: red;
+	.common-args(10px);
+}
+
+//2.3代码块重用－可设置默认参数
+.common-default-args(@weight:15px){
+	float: left;
+	border-top: @weight solid green;
+}
+
+#main #div3{
+	width: 50px;
+	height: 50px;
+	background: red;
+	.common-default-args();
+}
+
+#main #div4{
+	width: 50px;
+	height: 50px;
+	background: red;
+	.common-default-args(20px);
+}
+
+//3.匹配模式，相当于Java中的方法重载
+#triangle{
+	clear: both;
+	width: 400px;
+	height: 150px;
+	border: 1px solid orange;
+}
+.triangle-common{
+	width: 0px;
+	height: 0px;
+	float: left;
+	border-width: 10px;
+	border-style: solid;
+}
+.triangle(top){
+	border-color: transparent transparent red transparent;
+}
+.triangle(right){
+	border-color: transparent transparent transparent red;
+}
+.triangle(bottom){
+	border-color: red transparent transparent transparent;
+}
+.triangle(left){
+	border-color: transparent transparent transparent red;
+}
+#triangle1{
+	.triangle-common;
+	.triangle(top);
+}
+#triangle2{
+	.triangle-common;
+	.triangle(right);
+}
+#triangle3{
+	.triangle-common;
+	.triangle(bottom);
+}
+#triangle4{
+	.triangle-common;
+	.triangle(left);
+}
+
+//4.数学运算，支持加减乘除、括号
+#math{
+	width: 100px+20;//有一个单位就可以了
+	height: 30px;
+	background-color: blue;
+}
+
+//5.支持代码嵌套（包括伪类选择符）
+#nest{
+	ul{
+		list-style: none;
+		li{
+			font-size: 20px;
+			&:hover{//注意此处写法
+				color: blue;
+			}
+		}
+	}
+}
+
+//6.支持arguments(用于指代所有参数)
+.styleArg(@weight,@style,@color){
+	border:@arguments;
+}
+#footer{
+	width: 100px;
+	height: 100px;
+	.styleArg(10px,solid,#ccc);
+}
+
+//7.使用~“”避免编译,使用!important对“函数”内的所有代码进行强调
+.test1{
+	width: calc(200px+100);
+}
+.test2{
+	width: ~'calc(200px+100)';
+}
+.test3{
+	.common-args(10px) !important;
+}
+
+
+
+
+
+
+
+
+
+
+

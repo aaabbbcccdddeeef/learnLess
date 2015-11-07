@@ -1,0 +1,117 @@
+@charset "utf-8";
+/*这种注释形式编译之后还会显示*/
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: grey;
+}
+#main {
+  width: 800px;
+  height: 100px;
+}
+.common {
+  float: left;
+  border-top: 5px solid green;
+}
+#main #div1 {
+  width: 50px;
+  height: 50px;
+  background: red;
+  float: left;
+  border-top: 5px solid green;
+}
+#main #div2 {
+  width: 50px;
+  height: 50px;
+  background: red;
+  float: left;
+  border-top: 10px solid #008000;
+}
+#main #div3 {
+  width: 50px;
+  height: 50px;
+  background: red;
+  float: left;
+  border-top: 15px solid #008000;
+}
+#main #div4 {
+  width: 50px;
+  height: 50px;
+  background: red;
+  float: left;
+  border-top: 20px solid #008000;
+}
+#triangle {
+  clear: both;
+  width: 400px;
+  height: 150px;
+  border: 1px solid orange;
+}
+.triangle-common {
+  width: 0px;
+  height: 0px;
+  float: left;
+  border-width: 10px;
+  border-style: solid;
+}
+#triangle1 {
+  width: 0px;
+  height: 0px;
+  float: left;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent red transparent;
+}
+#triangle2 {
+  width: 0px;
+  height: 0px;
+  float: left;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent red;
+}
+#triangle3 {
+  width: 0px;
+  height: 0px;
+  float: left;
+  border-width: 10px;
+  border-style: solid;
+  border-color: red transparent transparent transparent;
+}
+#triangle4 {
+  width: 0px;
+  height: 0px;
+  float: left;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent red;
+}
+#math {
+  width: 120px;
+  height: 30px;
+  background-color: blue;
+}
+#nest ul {
+  list-style: none;
+}
+#nest ul li {
+  font-size: 20px;
+}
+#nest ul li:hover {
+  color: blue;
+}
+#footer {
+  width: 100px;
+  height: 100px;
+  border: 10px solid #cccccc;
+}
+.test1 {
+  width: calc(300px);
+}
+.test2 {
+  width: calc(200px+100);
+}
+.test3 {
+  float: left !important;
+  border-top: 10px solid #008000 !important;
+}
