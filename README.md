@@ -11,6 +11,7 @@
 - 从博客项目到CMS项目,从电商网站到SNS网站,写代码如写诗;
 
 - 求知若饥,虚心若愚,我相信,不想成为射鸡狮的文艺二B青年不是好程序猿;
+
 ## 技能
 - 最擅长的是JavaScript、PHP、以及Linux的运维;
 - 最常用的是jQuery/AngularJS/FIS、Bootstrap前端框架、ThinkPHP/Yii后台框架和Centos系统zsh脚本;
